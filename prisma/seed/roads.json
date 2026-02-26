@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "check": false,
+        "attempt_coins": 0
+    },
+    {
+        "id": 2,
+        "check": false,
+        "attempt_coins": 0
+    },
+    {
+        "id": 3,
+        "check": false,
+        "attempt_coins": 0
+    },
+        {
+        "id": 4,
+        "check": false,
+        "attempt_coins": 0
+    }
+]

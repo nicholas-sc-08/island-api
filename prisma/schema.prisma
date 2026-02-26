@@ -1,0 +1,72 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Category {
+  TRILHA
+  PRAIA
+  LARICA
+}
+
+model Users {
+  id            Int      @id @default(autoincrement())
+  name          String
+  email         String   @unique
+  password      String
+  current_coins Int      @default(0)
+  created_at    DateTime @default(now())
+
+  relations Relation[]
+}
+
+model Road {
+  id            Int      @id @default(autoincrement())
+  attempt_coins Int
+  check Boolean
+  created_at    DateTime @default(now())
+  // check Boolean @default(false)
+
+  relations Relation[]
+}
+
+model Address {
+  id       Int      @id @default(autoincrement())
+  name     String
+  image_url String
+  category Category
+  check Boolean
+
+  relations Relation[]
+}
+
+model Relation {
+  id Int @id @default(autoincrement())
+  // Outros campos relevantes para a tabela Relation, se houver
+
+  // -- Relacionamento com User --
+  userId Int
+  user   Users @relation(fields: [userId], references: [id])
+
+  // -- Relacionamento com Address --
+  addressId Int
+  address   Address @relation(fields: [addressId], references: [id])
+
+  // -- Relacionamento com Road --
+  roadId Int
+  road   Road @relation(fields: [roadId], references: [id])
+
+  // Adiciona uma restrição de unicidade composta se cada combinação for única
+  @@unique([userId, addressId, roadId])
+}

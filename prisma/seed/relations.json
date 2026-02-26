@@ -1,0 +1,27 @@
+[
+    {
+        "userId": 1,
+        "addressId": 1,
+        "roadId": 1
+    },    {
+        "userId": 1,
+        "addressId": 2,
+        "roadId": 1
+    },    {
+        "userId": 1,
+        "addressId": 4,
+        "roadId": 1
+    },    {
+        "userId": 1,
+        "addressId": 8,
+        "roadId": 1
+    },    {
+        "userId": 1,
+        "addressId": 20,
+        "roadId": 1
+    },    {
+        "userId": 1,
+        "addressId": 21,
+        "roadId": 1
+    }
+]
