@@ -2,6 +2,8 @@
 
 # Island API
 
+<div align="center">
+  
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Express](https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -11,6 +13,7 @@
 ![NPM](https://img.shields.io/badge/npm-red?style=for-the-badge&logo=npm&logoColor=white)
 ![node](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![ts-node](https://img.shields.io/badge/ts--node-3178C6?style=for-the-badge&logo=ts-node&logoColor=white)
+</div>
 
 ## 📋 Pré-requisitos
 
@@ -25,13 +28,16 @@ Siga os passos abaixo para ter a API rodando localmente:
 ### 1. Clone o Repositório
 
 ```bash
+#Clone o Repositório
 git clone https://github.com/DarlanHildebrando/frontend-hackathon.git
 
+# Vá no diretório do Projeto
 cd backend-hackaton
 ```
 ### 2. Instale as Dependências
 
 ```bash
+#Instale as dependências
 npm install
 ```
 
@@ -113,6 +119,6 @@ A estrutura do sistema está organizada de forma modular, com foco de separaçã
 ## 📝 Licença
 Projeto sob licança MIT.
 
-Caso queira ver em qual repositório foi desenvolvido, clique aqui:
+Caso queira ver em qual repositório foi desenvolvido, clique aqui: <a href="https://github.com/DarlanHildebrando/backend-hackathon">Acessar Repositório</a>
 
-<a href="https://github.com/DarlanHildebrando/backend-hackathon">Acessar Repositório</a>
+Repositório do Front-End: <a href="https://github.com/nicholas-sc-08/island-web">Acessar Repositório</a>
